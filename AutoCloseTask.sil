@@ -12,6 +12,6 @@ for(string subtask in subtasks) {
 }
 
 autotransition("Done", parent, true, true, true);
-parent.resolution = "Accepted";
+parent.resolution = "Accepted"; //ustaw odpowiedni status
 
 // opcja dodania tworzenia nowego zgłoszenia - CreateIssue.sil
