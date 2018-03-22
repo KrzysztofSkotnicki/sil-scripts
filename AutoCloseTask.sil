@@ -1,4 +1,4 @@
-// dodanie do workflow w ostatnim przejściu sub-taska
+// sprawdza czy wszytskie sub-taski sa zamkniete i jesli maja ustawiony odpowiedni status to zamykane jest glowne zgloszenie
 
 if(isNull(parent)) {
    return;
