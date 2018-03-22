@@ -1,0 +1,17 @@
+// dodanie do workflow w ostatnim przejściu sub-taska
+
+if(isNull(parent)) {
+   return;
+}
+string[] subtasks = subtasks(parent);
+
+for(string subtask in subtasks) {
+    if(%subtask%.resolution != "Accepted") {
+       return;
+    }
+}
+
+autotransition("Done", parent, true, true, true);
+parent.resolution = "Accepted";
+
+// opcja dodania tworzenia nowego zgłoszenia - CreateIssue.sil
