@@ -6,7 +6,7 @@ if(isNull(parent)) {
 string[] subtasks = subtasks(parent);
 
 for(string subtask in subtasks) {
-    if(%subtask%.resolution != "Accepted") {
+    if(%subtask%.resolution != "Accepted") { //ustaw odpowiedni status
        return;
     }
 }
